@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://127.0.0.1:5501/index.html27.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&amp;display=swap" rel="stylesheet">
+    <title>Agency</title>
+  <style>
+    body {
+      font-family: "Courgette", cursive;
+      margin: 50px 50px 0 50px;
+      background-color: whitesmoke;
+      display: flex;
+      flex-direction: column;
+      min-height: 95vh;
+    }
+    .main {
+      flex: 1;
+    }
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    footer {
+      color: lightseagreen;
+      text-align: right;
+    }
+    .title-image {
+      height: 200px;
+      margin-right: 50px;
+      margin-left: 0;
+    }
+
+    .card {
+      width: 45%;
+    }
+
+    .left {
+      float: left;
+    }
+    .right {
+      float: right;
+    }
+    .head {
+      color: lightseagreen;
+    }
+    header {
+      color: lightcoral;
+      font-size: 30px;
+    }
+    @media (max-width: 680px) {
+      h1 {
+        font-size: 2.5rem;
+        text-align: center;
+      }
+      .card {
+        width: 100%;
+        display: block;
+        margin-top: 30px;
+        text-align: justify;
+      }
+      .card img {
+        width: 100%;
+        margin-bottom: 10px;
+        display: inline;
+        object-fit: cover;
+      }
+    }
+  </style></head>
+  
+  <body>
+    <header>
+      <p>Beyoutiful.com</p>
+    </header>
+    <div class="main">
+      <h1>
+        We promote <span class="head">Body Neutrality</span>, Body Positivity,
+        Self-esteem and Self-love.
+      </h1>
+      <div class="left card">
+        <img class="title-image" src="./index_files/istockphoto-1452738385-1024x1024.jpg">
+        <h2 class="card-title">Body Positivity</h2>
+        <p class="card-text">
+          Body Positivity is a movement which promotes the uniqueness, beauty
+          and individual features of everyone.
+        </p>
+      </div>
+      <div class="right card">
+        <img class="title-image" src="./index_files/istockphoto-1484146725-1024x1024.jpg">
+        <h2 class="card-title">Body Neutrality</h2>
+        <p>
+          Body Neutrality is accepting that your body is more than an aesthetic
+          and more of what allows us to function as human beings in our
+          day-to-day lives.
+        </p>
+      </div>
+    </div>
+    <footer>
+      <p>Love.Grow.Embrace</p>
+      <p>Olesin Ibukunoluwa</p>
+    </footer>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
